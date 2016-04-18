@@ -29,8 +29,13 @@ Create database using below command
 #Building client
 
 ```bash
-gulp build
+gulp build-all
 
+```
+
+After making any changes just run below cmd.
+```bash
+gulp build
 ```
 
 # Transpile
