@@ -1,0 +1,78 @@
+#EmailApp {
+  background-color: #3A1E06;
+  color: #fff;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+.header {
+  height: 80px;
+  top: 0px;
+  border-bottom: 1px solid #ccc;
+}
+.pad10 {
+  padding: 10px;
+}
+.pad20 {
+  padding: 20px;
+}
+.top10 {
+  padding-top: 10px;
+}
+.top20 {
+  padding-top: 20px;
+}
+.body {
+  padding-top: 10px;
+}
+.login-form {
+  margin-left: 35%;
+  margin-top: 15%;
+}
+.login-form form {
+  background-color: #383523;
+  padding: 30px;
+}
+.login-form button {
+  margin-left: 40%;
+}
+.register-form {
+  margin-left: 35%;
+  margin-top: 10%;
+}
+.register-form h3 {
+  padding-bottom: 50px;
+}
+.register-form button {
+  margin-left: 40%;
+}
+.action-panel {
+  padding: 0px !important;
+}
+.action-panel a {
+  color: #fff;
+}
+.action-panel ul button {
+  margin-bottom: 10px;
+}
+.action-panel li {
+  list-style-type: none;
+}
+.body {
+  height: 800px;
+}
+.body .inbox-content-panel .compose-panel {
+  background-color: #fff;
+  height: 100%;
+}
+.body .inbox-content-panel .grid-panel .grid-action-panel {
+  margin-bottom: 50px;
+}
+.body .inbox-content-panel .grid-panel .grid-container {
+  overflow-y: auto;
+  background-color: #fff;
+}
+.body .inbox-content-panel .details-panel {
+  height: 100%;
+  background-color: #fff;
+}

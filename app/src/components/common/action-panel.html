@@ -1,0 +1,28 @@
+﻿<div>  
+    <div class="col-sm-12 top-content">        
+        <div class="col-sm-12">
+            <a class="btn btn-primary" [routerLink]="['/Compose']">Compose</a>
+        </div>
+    </div>
+    <div class="col-sm-12 tabs-panel">
+        <tabset vertical="true">        
+             <tab *ngFor="#tabz of tabs"
+                     [heading]="tabz.title"
+                     [active]="tabz.active == true"
+                     (select)="onTabSelect(tabz)"                    
+                     (deselect)="tabz.active = false"
+                     [disabled]="tabz.disabled"
+                     [removable]="tabz.removable"
+                     (removed)="removeTabHandler(tabz)">
+            </tab>
+        </tabset>
+    </div>
+
+    <div class="col-sm-12">
+       <tree-view [directories]="directories"></tree-view>
+    </div>
+
+    <div>
+        
+    </div>
+</div>

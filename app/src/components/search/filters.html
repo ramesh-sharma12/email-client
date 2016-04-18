@@ -1,0 +1,35 @@
+﻿<div class="search-filters">
+    <div class="panel">
+        <p class="filter-closed" (click)="toggleLanguage(langauge)">
+            <span class="filter-title ng-binding">
+                Language
+                <span class="icon" ng-class="{'plus':langauge, 'minus':!langauge}"></span>
+            </span>
+        </p>
+        <div class="form-group" *ng-if="langauge" style="height: 300px; overflow-y: auto;">
+            <checkbox-list selection="languageFilters" items="filters.Languages" label="Name" value="Id"> </checkbox-list>
+        </div>
+    </div>
+    <div class="panel">
+        <p class="filter-closed" (click)="toggleCategory(category)">
+            <span class="filter-title ng-binding">
+                Category
+                <span class="icon" ng-class="{'plus':category, 'minus':!category}"></span>
+            </span>
+        </p>
+        <div *ng-if="category" style="height: 300px; overflow-y: auto;">
+            <checkbox-list selection="categoryFilters" items="filters.Categories" preselectedfilter="preSelectedFilter" label="Name" value="Id"> </checkbox-list>
+        </div>
+    </div>
+    <div class="panel">
+        <p class="filter-closed" (click)="togglePrices(price)">
+            <span class="filter-title ng-binding">
+                Price
+                <span class="icon" ng-class="{'plus':price, 'minus':!price}"></span>
+            </span>
+        </p>
+        <div ng-hide="price">
+            <checkbox-list selection="priceFilters" items="filters.prices" label="Name" value="Value"> </checkbox-list>
+        </div>
+    </div>
+</div>

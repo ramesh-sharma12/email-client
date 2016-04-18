@@ -1,0 +1,56 @@
+﻿<div class=""> 
+    <div class="row top-content">
+        <input type="text" class="form-control" placeholder="Type keyword.." />
+
+        <div class="row toolbar">
+          <div class="row col-sm-7 pull-left">           
+            <span class="col-sm-1">
+               <span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span>
+            </span>
+            <span class="col-sm-1">
+               <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+            </span>
+            <span class="col-sm-1">
+               <span class="glyphicon glyphicon-alert" aria-hidden="true"></span>
+            </span>
+          </div>
+          <div class="col-sm-3"> 
+              <span class="label">
+                  1 - 100 of 1000
+              </span>
+          </div>
+          <div class="pull-right"> 
+              <span class="col-sm-1">
+                   <span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span>
+              </span>
+              <span class="col-sm-1">
+                   <span class="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span>
+              </span>
+          </div>        
+    </div>
+    </div>     
+    <div class="row grid-container">      
+        <div class="col-sm-12 header">
+            <div class="col-sm-1">
+                <input type="checkbox" />
+            </div>
+            <div class="col-sm-1"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>
+            <div class="col-sm-3">{{'From'}}</div>
+            <div class="col-sm-4">{{'Subject'}}</div>
+            <div class="col-sm-2">{{'Date'}}</div>
+        </div>
+        <div class="col-sm-12 content scrollbar" *ngIf="emails.length">        
+            <div class="row row-item" *ngFor="#email of emails">
+                <div class="col-sm-1">
+                    <input type="checkbox" />
+                </div>
+                 <div class="col-sm-1"> <span class="glyphicon glyphicon-star" aria-hidden="true"></span></div>
+                 <a (click)="getDetails(email)" >
+                    <div class="col-sm-3">{{email.From}}</div>
+                    <div class="col-sm-4">{{email.Subject}}</div>
+                    <div class="col-sm-2">{{email.ReceivedDate}}</div>
+                 </a>               
+            </div>
+        </div>
+    </div>
+</div>

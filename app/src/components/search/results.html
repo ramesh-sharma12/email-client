@@ -1,0 +1,68 @@
+﻿<div class="search-results col-sm-12">
+    <div class="toolbar" style="height: 45px;">
+        <div class="col-sm-8">
+            Showing {{results.StartIndex}} - {{results.EndIndex}} of {{results.TotalCount}}
+        </div>
+        <div class="col-sm-4">
+            <div class="col-sm-3 "> <label>Sort By : </label>  </div>
+            <div class="col-sm-4">
+                <select ng-control="sortKey">
+                    <option *ng-for="#s of sortKeys" [value]="s.Value"> {{s.Name}} </option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="bookList col-sm-12">
+        <div template="ng-for #item of books; #i = index">
+            <div class="col-sm-12 book-section" style="padding: 20px;" *ng-if="item.BookId">
+                <div class="col-sm-4" *ng-if="item.ImageUrl != null">
+                    <img src="http://origin-static.azurewebsites.net/Content/Images/Books/{{item.ImageUrl}}" style="height: 200px; width: 200px;" title="" alt="" />
+                </div>
+                <div class="col-sm-6" style="padding-top: 20px;padding-left: 30px;">
+                    <span style="font-size: 16px; font-weight: bold">
+                        <a [Router-Link]="['/books/details']" [Router-params]="{{item.Id}}" >{{item.Title}}</a>
+                    </span>
+                    By
+                    <span>Author: </span>{{item.AuthorName}}
+
+                    <div style="border: 1px; background-color: gray; height: 1px; margin: 5px; margin-right: 30px;"></div>
+                    <div>Publisher: </div>
+                    <span>{{item.PublisherName}} </span>
+                    <div>Released:{{item.PublishDate}}</div>
+
+                    <div class="ratings-reviews">
+                        <div class="ratings">
+                            <div class="fk-stars" title="stars">
+                                <span class="unfilled">★★★★★</span>
+                                <span class="rating filled">
+                                    ★★★★★
+                                </span>
+                                <a style="color: #000000;" (click)="showReviewDeteils(item.BookId)">({{item.TotalReviews}} Reviews)</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="padding-top: 20px;" class="mark-as-fav" *ng-if="item.IsMarkedFavroite">
+                        <div class="green-tick" style="float: left;"></div>
+                        <a href="" (click)="removeBookFromWishlist(item)">Remove from my wishlist </a>
+                    </div>
+
+                    <div style="padding-top: 20px;" *ng-if="item.IsMarkedFavroite">
+                        <a href="" (click)="addBookToWishlist(item)">Add to my wishlist </a>
+                    </div>
+                </div>
+                <div class="col-sm-2" style="padding-top: 50px;">
+                    <div style="font-weight: bold;">
+                        <span>Cost:</span> {{item.Cost}}
+                    </div>
+                    <div>
+                        <button class="btn btn-primary save" (click)="addItemToCart(item.BookId)">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div *ng-if="!books.length" class="text-center">
+        No results to display.
+    </div>
+</div>

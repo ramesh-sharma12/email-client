@@ -1,0 +1,15 @@
+<ul>
+    <li *ngFor="#dir of directories"> 
+        <div class="caret" (click)="dir.toggle()"> 
+            <div class=""> <a href="#/{{dir.name}}">{{ dir.name }}</a> </div>
+        </div>        
+        <div *ngIf="dir.expanded">
+            <ul >
+                <li *ngFor="#file of dir.files">
+                    <a class="pull-left" href="#/{{file}}">{{file}}</a>
+                 </li>
+            </ul>
+            <tree-view [directories]="dir.directories"></tree-view>
+        </div>
+    </li>
+</ul>

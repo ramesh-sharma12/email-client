@@ -1,0 +1,21 @@
+{
+  "ambientDependencies": {
+    "body-parser": "registry:dt/body-parser#0.0.0+20160317120654",
+    "ckeditor": "registry:dt/ckeditor#0.0.0+20160317120654",
+    "cookie-parser": "registry:dt/cookie-parser#1.3.4+20160316155526",
+    "debug": "registry:dt/debug#0.0.0+20160317120654",   
+    "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#4de74cb527395c13ba20b438c3a7a419ad931f1c",
+    "express": "registry:dt/express#4.0.0+20160317120654",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#0.0.0+20160317120654",
+    "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#bc92442c075929849ec41d28ab618892ba493504",
+    "mime": "registry:dt/mime#0.0.0+20160316155526",
+    "mongodb": "registry:dt/mongodb#2.1.0+20160316155526",
+    "pathjs": "registry:dt/pathjs#0.8.4+20160316155526",
+    "serve-static": "registry:dt/serve-static#0.0.0+20160317120654",
+    "swig": "registry:dt/swig#0.0.0+20160316155526",
+    "winston": "registry:dt/winston#0.0.0+20160316155526"
+  },
+  "dependencies": {
+    "moment": "registry:npm/moment#2.10.5+20160211003958"
+  }
+}

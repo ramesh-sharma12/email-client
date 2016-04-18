@@ -1,0 +1,29 @@
+<section  class="header">
+	 <div class="col-sm-12 top-content">
+		 <div class="col-sm-2 pull-left" *ngIf="isUserAuthenticated">
+		 	<div class="col-sm-2 img"><a [routerLink]="['Profile']"></a></div>
+	        <div class="col-sm-8 label">
+	           <div> <label> <a [routerLink]="['Profile']"> Ramesh kumar </a></label> </div>
+	           <div>Hyderabad, India</div>
+	        </div>	        
+		 </div> 
+		 <div class="col-sm-10">		 	
+		 	 <div class="pull-right" *ngIf="isUserAuthenticated">
+				  <a class="btn btn-primary" [routerLink]="['/Settings']">Settings</a>
+				  <a class="btn btn-primary" [routerLink]="['/Logout']">Logout</a>
+			 </div>
+		 </div>
+    </div>
+</section>
+<section class="body">	
+	<div class="col-sm-2 action-panel">
+	    <action-panel ></action-panel>
+	</div>
+	<div class="col-sm-10 content-panel">	      
+         <router-outlet ></router-outlet>
+	</div>
+</section>
+
+<section class="footer">
+	
+</section>

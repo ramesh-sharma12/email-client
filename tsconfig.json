@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {    
+    "outDir": ".",
+    "target": "ES5",
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "moduleResolution":"node",
+    "module": "commonjs",
+    "noLib": false,
+    "noResolve": false
+  }, 
+  "files": [
+     "app/src/boot.ts",
+     "app/src/app.ts"
+    ],
+  "filesGlob": [
+        "app/**/*.ts",
+        "!node_modules/**/ *.ts",
+        "!typings/main/**/*.ts",
+        "!typings/browser/**/*.ts"
+  ], 
+  "exclude": [
+    "typings/browser.d.ts",
+    "typings/browser",
+    "typings/main.d.ts",
+    "typings/main",
+    "node_modules"
+  ]
+}

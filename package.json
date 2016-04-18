@@ -1,0 +1,71 @@
+{
+  "name": "email-client-app",
+  "version": "0.0.1",
+  "description": "Angular 2.X starter kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntJanus/angular2-ts-starter-kit.git"
+  },
+  "author": "Antonin Januska @antjanus",
+  "bugs": {
+    "url": "https://github.com/AntJanus/angular2-ts-starter-kit/issues"
+  },
+  "scripts": {
+    "appBuild": "gulp build && npm run serve",
+    "serverBuild": "tsc --sourcemap --outDir ./dist --rootDir ./server --module commonjs ./server/boot.ts",
+    "serve": "run.sh",
+    "server": "tsc --sourcemap --outDir ./dist --rootDir ./server --module commonjs ./server/boot.ts && node ./dist/boot.js",
+    "test": "gulp build"
+  },
+  "homepage": "https://github.com/AntJanus/angular2-ts-starter-kit#readme",
+  "dependencies": {
+    "angular2": "2.0.0-beta.9",
+    "angular2-grid": "^0.4.6",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.33.6",
+    "jquery": "^2.2.2",
+    "ng2-bootstrap": "1.0.7",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.2",
+    "systemjs": "0.19.24",
+    "textangular": "1.5.0",
+    "zone.js": "0.5.15"
+  },
+  "devDependencies": {
+    "angular2-jwt": "^0.1.9",
+    "body-parser": "^1.15.0",
+    "bootstrap": "^3.3.6",
+    "ckeditor": "^4.5.8",
+    "connect-livereload": "^0.5.4",
+    "cookie-parser": "^1.4.1",
+    "del": "^2.2.0",
+    "express": "^4.13.4",
+    "express-livereload": "0.0.24",
+    "fs-extra": "^0.26.7",
+    "gulp": "3.9.0",
+    "gulp-connect": "2.2.0",
+    "gulp-express": "^0.3.5",
+    "gulp-inject": "^3.0.0",
+    "gulp-less": "^3.0.5",
+    "gulp-watch": "^4.3.5",
+    "gulp-webpack": "^1.5.0",
+    "http": "0.0.0",
+    "mongodb": "^2.1.7",
+    "ng2-ckeditor": "^1.0.0",
+    "open": "0.0.5",
+    "path": "^0.12.7",
+    "pathjs": "^0.8.1",
+    "request": "^2.69.0",
+    "run-sequence": "^1.1.5",
+    "serve-static": "^1.10.2",
+    "swig": "^1.4.2",
+    "textangular": "^1.5.0",
+    "ts-loader": "^0.7.2",
+    "typescript": "1.7.3",
+    "typings": "^0.6.10",
+    "webpack": "^1.12.15",
+    "webpack-livereload-plugin": "^0.7.0",
+    "webpack-stream": "^3.1.0",
+    "winston": "^2.2.0"
+  }
+}

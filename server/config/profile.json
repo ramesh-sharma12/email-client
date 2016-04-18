@@ -1,0 +1,26 @@
+[  
+   { 
+   	  "_id":"56fe02c6790429bc51ca589b",
+   		"FirstName": "Ramesh",
+		"LastName": "Kumar",
+		"FullName": "Sharma",
+		"EmailId": "ramesh@gmail.com",
+		"Phone": "2343242",
+		"DoB": "23-12-1988",
+		"Gender": "Male",
+		"MartialStatus" : "Single",
+		"User": {}
+   },
+   {
+     	"_id":"56f502c6705429bc51ca589b",
+   	    "FirstName": "Manoj",
+		"LastName": "Kumar",
+		"FullName": "Sharma",
+		"EmailId": "manoj@gmail.com",
+		"Phone": "8686786867",
+		"DoB": "23-12-1980",
+		"Gender": "Male",
+		"MartialStatus" : "Married",
+		"User": {}
+   }
+]

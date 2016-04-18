@@ -1,0 +1,129 @@
+[  
+   {  
+      "_id":"56f502c6790429bc51ca589b",
+      "Subject":"test sub",
+      "Description":"test des",
+      "Message":"This is to inform",
+      "FromUser":"ramesh@gmail.com",
+      "ToUser":"kumar@gmail.com",
+      "CC":"",
+      "BCC":"",
+      "Status": 0,
+      "Read" : false,
+      "ReceivedOn" : "12-04-2015",
+      "Type":"Primary",
+      "HasAttachments":false,
+      "User":{  
+
+      },
+      "Category":{  
+
+      }
+   },
+   {  
+      "_id":"56f502c6790429bc61ca589c",
+      "Subject":"test sub 2",
+      "Description":"test des asdafas",
+      "Message":"This very important mail sdfasfdas",
+      "FromUser":"ramesh@gmail.com",
+      "ToUser":"kumar@gmail.com",
+      "CC":"",
+      "BCC":"",
+      "Status":1,
+      "Read" : false,
+      "ReceivedOn" : "22-04-2015",
+      "Type":"Primary",      
+      "HasAttachments":false,
+      "User":{  
+
+      },
+      "Category":{  
+
+      }
+   },
+   {  
+      "_id":"56f542c6790429bc51ca589d",
+      "Subject":"test sub 2",
+      "Description":"test des asdafas",
+      "Message":"This very important mail sdfasfdas",
+      "FromUser":"ramesh@gmail.com",
+      "ToUser":"kumar@gmail.com",
+      "CC":"",
+      "BCC":"",
+      "Status":2,
+      "ReceivedOn" : "12-06-2015",
+      "Type":"Primary",
+       "Read" : true,
+      "HasAttachments":false,
+      "User":{  
+
+      },
+      "Category":{  
+
+      }
+   },
+   {  
+      "_id":"56f522c6790429bc51ca589e",
+      "Subject":"test sub 2",
+      "Description":"test des asdafas",
+      "Message":"This very important mail sdfasfdas",
+      "FromUser":"ramesh@gmail.com",
+      "ToUser":"kumar@gmail.com",
+      "CC":"",
+      "BCC":"",
+      "Status":3,
+      "Type":"Primary",
+      "Read" : false,
+      "SentOn" : "12-04-2014",
+      "HasAttachments":false,
+      "User":{  
+
+      },
+      "Category":{  
+
+      }
+   },
+   {  
+      "_id":"56f502c6290429bc51ca589e",
+      "Subject":"test sub 2",
+      "Description":"test des asdafas",
+      "Message":"This very important mail sdfasfdas",
+      "FromUser":"ramesh@gmail.com",
+      "ToUser":"kumar@gmail.com",
+      "CC":"",
+      "BCC":"",
+      "Status":2,
+      "Type":"Primary",
+      "Read" : false,
+      "SentOn" : "12-04-2014",
+      "HasAttachments":false,
+      "User":{  
+
+      },
+      "Category":{  
+
+      }
+   },
+   {  
+      "_id":"56f502c2790429bc51ca589e",
+      "Subject":"test sub 2",
+      "Description":"test des asdafas",
+      "Message":"This very important mail sdfasfdas",
+      "FromUser":"ramesh@gmail.com",
+      "ToUser":"kumar@gmail.com",
+      "CC":"",
+      "BCC":"",
+      "Status":1,
+      "Type":"Primary",
+      "Read" : true,
+      "SentOn" : "12-04-2014",
+      "HasAttachments":false,
+      "User":{  
+
+      },
+      "Category":{  
+
+      }
+   }
+]
+

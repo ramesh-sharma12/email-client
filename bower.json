@@ -1,0 +1,22 @@
+{
+  "name": "emailclientApp",
+  "description": "this is used to create email client app",
+  "main": "",
+  "authors": [
+    "Ramesh_kumar"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular2",
+    "typescripts",
+    "webpack"
+  ],
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "angular-bootstrap": "~1.2.4",
+    "angular-ui-grid": "~3.1.1",
+    "angular-ui-tree": "~2.15.0"
+  }
+}

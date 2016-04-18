@@ -1,0 +1,25 @@
+[  
+   { 
+   		"_id" : "56d502c6790429bc51ca589b",
+		"Name" : "Bank",
+		"SubCategories" : [{
+			"_id" : "56f502c679042abc51ca589b",
+			"Name" : "ICICI"
+			}
+		]
+   },
+   {
+		"_id" : "56f502c6790429bc51da589b",
+		"Name" : "NewLetters",
+		"SubCategories" : [ 
+			{
+				"_id" : "56f502c6790429bc51ca5e9b",
+				"Name" : "EFY"
+		  },
+		  {
+			"_id" : "56f502c67904d9bc51ca5e9b",
+			"Name" : "Dzone"
+		  }
+		]
+   }
+]
