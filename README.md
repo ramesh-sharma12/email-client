@@ -38,8 +38,9 @@ gulp build
 
 # Run
 
-Running  express server
+Running express server
+Open another cmd window and run below commands.
+
+```bash
 > npm run server
-
-
-http://plnkr.co/edit/wHPV4rOTVK4lLTEZHxif?p=preview
+```
